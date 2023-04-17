@@ -12,6 +12,6 @@ So, let us try to look  for a website that cracks MD5 hashes since they are weak
 We can use any website to do this, I used MD5Online to do this and got the following output:
 
 > Found : **Iamtheflag**  
-(hash = 1ab566b9fa5c0297295743e7c2a6ec27)
+  (hash = 1ab566b9fa5c0297295743e7c2a6ec27)
 
 Therefore we have found the flag.

@@ -1,23 +1,36 @@
-### Challenge Description:
+## Postbase Write-Up
 
-> We got this letters and numbers and don't understand them. Can you? R[corrupted]BR3tCNDUzXzYxWDdZXzRSfQ==
+### First: 
 
-The format of this encoding indicates that this is a base64 encoding, that is because there are two "=" signs at the end of it. We also need to know the number of characters in it to assess how many characters are missing. We can use the following website "lettercount.com" to do so. We find that it is 26 charactes that means that there are 2 missing characters to get 28 sharacters to be a multiple of 4. So, we can write a simple code that attempts to brute force the missing two characters.
+We can see that our text was encoded by base64.
 
-```Python 
-import base64  
-encodedStr = 'BR3tCNDUzXzYxWDdZXzRSfQ=='  
-Map = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=' ;  
-  
-for i in range (64) :  
-      for j in range (64) :  
-           r= 'R' + Map[i] + Map[j] + encodedStr;  
-           decoded = base64.b64decode(r);  
-           if b'FLAG' in decoded :  
-                print(decoded)
-```
+### Second:
 
-After running this code snippet, we get the flag in the format:
+So  R[corrupted]BR3tCNDUzXzYxWDdZXzRSfQ==  --> As you can see we are missing some letters after 'R' , but easily we can know the number of those missing you can see if you count the letters without the corrupted section.
 
-> FLAG{#############}
+  --> RBR3tCNDUzXzYxWDdZXzRSfQ==  --> They're 26 and with two '==' that means that there are  two missing letters.
+
+Just to be 28 letters so we are missing two letters after 'R' .
+
+#### *Note that in base64 the ltters should be multible of four so when we have our encoded text isn't multiple of four ,we put at the end ot it any number 0f '=' to be multiblr of four *********
+
+### Third: 
+Here is a python scriot to brute force the two letters:
+
+```Python
+import base64 
+encodedStr = 'BR3tCNDUzXzYxWDdZXzRSfQ==' 
+Map = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=' ;
+
+for i in range (64) : 
+      for j in range (64) :
+	       r= 'R' + Map[i] + Map[j] + encodedStr
+	       decoded = base64.b64decode(r) 
+	       if b'FLAG' in decoded :
+        	 print (decoded)
+    `````````````````````
+
+### Last: 
+
+After you run the script you can now see the flag --> FLAG{B453_61X7Y_4R} 
 
