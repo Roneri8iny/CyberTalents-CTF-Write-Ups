@@ -4,7 +4,7 @@
 
 ### I found a cookie that has the name role and value support, so the first thing that came to my mind was to change its value to admin and see what I will get.
 
-I viewed page source and found this commented code snippet 
+I viewed page source and found this commented code snippet:
 
 ```javascript
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,10 +21,9 @@ I viewed page source and found this commented code snippet
 ```
 
 
-user ---> support 
-password ----> x34245323
+We can see that the username is  "support" and the password is "x34245323".
 
-message 
+After entering these credentials we get the following message: 
 
 > Hi support
 > Your privilege is support , may be you need better privilages !!
@@ -32,7 +31,6 @@ message
 I used the cookie I found before to change its value to admin and see what I will get.
 
 That opened a new page with the falg in it 
-
 
 >  Hi admin
 > Admin Secret flag :  ######################
