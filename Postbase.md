@@ -12,7 +12,7 @@ So  R[corrupted]BR3tCNDUzXzYxWDdZXzRSfQ==  --> As you can see we are missing som
 
 Just to be 28 letters so we are missing two letters after 'R' .
 
-#### *Note that in base64 the ltters should be multible of four so when we have our encoded text isn't multiple of four ,we put at the end ot it any number 0f '=' to be multiblr of four *********
+#### Note that in base64 the ltters should be multible of four so when we have our encoded text isn't multiple of four ,we put at the end ot it any number 0f '=' to be multiblr of four
 
 ### Third: 
 Here is a python scriot to brute force the two letters:
