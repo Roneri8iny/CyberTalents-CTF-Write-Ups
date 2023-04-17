@@ -10,18 +10,19 @@ When we first open the link there is no much use of it so we need to download it
 and write the following command
 
 >terminal
- wget /<link of the photo/>
+ wget    _name of the photo_
 
 
 Now after downloading it we can use exiftool to see the information of the photo
 
 ## Exiftool
+
 ExifTool is a free and open-source software program for reading, writing, and manipulating image, audio, video, and PDF metadata.
 
-so we can write in the terminal the following command
+So we can write in the terminal the following command:
 
 >terminal
- exiftool /<name of the photo/>
+ exiftool     _name of the photo_
 
 
 After running this command, we will get the meta data of the photo and we can see the flag in the copyright notice section.
