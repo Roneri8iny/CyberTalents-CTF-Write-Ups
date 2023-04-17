@@ -1,3 +1,5 @@
+## Admin Has The Power Write-Up
+
 ### The first thing that came to my mind was to inspect the page to view the cookies of the webpage. 
 
 ### I found a cookie that has the name role and value support, so the first thing that came to my mind was to change its value to admin and see what I will get.
