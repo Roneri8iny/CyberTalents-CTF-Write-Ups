@@ -28,9 +28,9 @@ for i in range (64) :
 	       decoded = base64.b64decode(r) 
 	       if b'FLAG' in decoded :
         	 print (decoded)
-    `````````````````````
+
+```
 
 ### Last: 
 
 After you run the script you can now see the flag --> FLAG{B453_61X7Y_4R} 
-
