@@ -9,8 +9,8 @@ As we can see there is a hidden information in the link below the description wh
 When we first open the link there is no much use of it so we need to download it to use some forensics tools on it so  first open your terminal on kali
 and write the following command
 
-terminal
-wget <link of the photo>
+>terminal
+ wget <link of the photo>
 
 
 Now after downloading it we can use exiftool to see the information of the photo
@@ -20,8 +20,8 @@ ExifTool is a free and open-source software program for reading, writing, and ma
 
 so we can write in the terminal the following command
 
-terminal
-exiftool <name of the photo>
+>terminal
+ exiftool <name of the photo>
 
 
 After running this command, we will get the meta data of the photo and we can see the flag in the copyright notice section.
