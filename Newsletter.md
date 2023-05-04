@@ -28,7 +28,9 @@ Then we can pass on the request as follows:
 That gives us all the files and directories present in the directory we are currently in, which are:
 
 > emails.txt
+> 
 > hgdr64.ackup.tar.gz
+> 
 > index.php
 
 Thus we can see the name of the backup file and that means that we have found the flag.
